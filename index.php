@@ -28,7 +28,7 @@
     <!-- CSS -->
     
 </head>
-<body onLoad=load()>
+<body onLoad=load() class="loading">
 
 <!-- header section starts  -->
 
@@ -87,7 +87,7 @@
     </nav>
     <div class="user__section pc">
             
-            <div class="profile" onclick="menuToggle()">
+            <div class="profile noselect" onclick="menuToggle()">
                 <?php
                     if (isset($_SESSION["login"])) { ?>
                         <h4 class="user_name">Chào!
@@ -379,7 +379,11 @@
 </section>
 
 <!-- footer section ends -->
-
+<!-- Loader -->
+<div class="loader">
+    <i class="bx bxs-virus bx-spin"></i>
+</div>
+<!-- End Loader -->
 <!-- scroll top  -->
 
 <a href="#home" class="scroll-top">

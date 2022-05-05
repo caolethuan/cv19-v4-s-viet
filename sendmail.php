@@ -27,14 +27,14 @@
             $mail->isSMTP();
             $mail->Host       = 'smtp.gmail.com';
             $mail->SMTPAuth   = true;
-            $mail->Username   = '1951120153@sv.ut.edu.vn';
-            $mail->Password   = 'thuan13032001';
+            $mail->Username   = 'contact.covid19tracker@gmail.com';
+            $mail->Password   = 'covid19tracker';
             $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
             $mail->Port       = 587;
     
             //Recipients
-            $mail->setFrom('1951120153@sv.ut.edu.vn');
-            $mail->addAddress('1951120153@sv.ut.edu.vn');
+            $mail->setFrom('contact.covid19tracker@gmail.com');
+            $mail->addAddress('contact.covid19tracker@gmail.com');
     
             $mail->isHTML(true);
             $mail->Subject = 'Message Received (Contact Page)';

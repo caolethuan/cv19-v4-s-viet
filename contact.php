@@ -2,7 +2,7 @@
     include('header.php');
     include('sendmail.php');
 ?>
-<body onload=load()>
+<body onload=load() class="loading">
     <section class="contact">
         <div class="contact__container">
             <div class="contact__info">

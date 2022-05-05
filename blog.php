@@ -4,7 +4,7 @@
     include('conn.php');
 ?>
 <!--end header-->
-<body onLoad=load()>
+<body onLoad=load() class="loading">
     <div class="blog__container" style="margin-top: 100px">
         <div class="row blog__intro">
             <div class="col-12">

@@ -1,7 +1,7 @@
 <?php
     include('header.php');
 ?>
-<body onLoad=load() class="about__container">
+<body onLoad=load() class="about__container loading">
     <div class="about__intro">
         <h1>Chúng mình là ai?</h1>
         <p>

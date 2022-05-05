@@ -617,6 +617,12 @@ header .navbar ul li a:hover{
     max-height: 250px;
     min-height: 250px;
 }
+
+.blog__img-a {
+    padding-top: 100%;
+    background-size: cover;
+    background-position: top center;
+}
 /* end blog */
 
 /* about us */
@@ -1150,11 +1156,14 @@ header .navbar ul li a:hover{
 }
 
 /* end Login */
+/* comment */
 
+/* end comment */
 /* dropdown menu */
 
 .user__section.mobile {
     display: none;
+    
 }
 
 .user__section.mobile .profile{
@@ -1262,6 +1271,41 @@ header .navbar ul li a:hover{
 
 /* media queries  */
 
+@media (max-width:1280px) {
+    .post_wrap {
+        padding-right: 45px !important;
+    }
+    .another-posts .row {
+        padding: 0 30px;
+    }
+
+    .blog__post h4 {
+        font-size: 16px;
+    }
+
+    .post_sidebar {
+        padding-left: 45px !important;
+    }
+
+    .post_sidebar .another-posts .blog__post::before {
+        display: none;
+    }
+    .another-posts .row {
+        padding-bottom: 30px;
+    }
+    .separate {
+        position: absolute;
+        height: 100%;
+        top: 0;
+        left: 0;
+        right: 0;
+        border-right: 1px solid #ccc;
+    }
+    .pos-re {
+        position: relative;
+    }
+}
+
 @media (max-width:991px){
 
     html{
@@ -1289,6 +1333,25 @@ header .navbar ul li a:hover{
         flex-direction: column-reverse;
     }
 
+    .blog__post h4 {
+        font-size: 16px;
+    }
+
+    .post_sidebar {
+        padding-left: 45px !important;
+    }
+
+    .post_sidebar .another-posts .blog__post::before {
+        display: none;
+    }
+
+    
+    .pos-re {
+        position: relative;
+    }
+    .separate {
+        display: block;
+    }
 }
 
 @media (max-width:790px){
@@ -1366,6 +1429,9 @@ header .navbar ul li a:hover{
         max-height: unset;
         min-height: unset;
     }
+    .separate {
+        display: none;
+    }
 }
 
 @media (max-width:500px){
@@ -1381,6 +1447,12 @@ header .navbar ul li a:hover{
     .blog__img img{
         max-height: unset;
         min-height: unset;
+    }
+    .blog__post h4 {
+        font-size: 14px;
+    }
+    .blog__intro .search input {
+        font-size: 14px;
     }
 
 }
@@ -1453,6 +1525,7 @@ header .navbar ul li a:hover{
 }
 
 .info__group input {
+    text-transform: none;
     width: 100%;
     border: 1px solid var(--color-txt);
     border-radius: 3px;

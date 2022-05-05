@@ -82,7 +82,7 @@
     </nav>
     <div class="user__section pc">
             
-            <div class="profile" onclick="menuToggle()">
+            <div class="profile noselect" onclick="menuToggle()">
                 <?php
                     if (isset($_SESSION["login"])) { ?>
                         <h4 class="user_name">Chào!
